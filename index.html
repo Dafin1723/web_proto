@@ -2,257 +2,122 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Dapinn</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      background: #f2f6fb;
-      color: #1f2937;
-    }
-
-    .wrapper {
-      max-width: 1100px;
-      margin: 0 auto 80px;
-      padding: 24px;
-    }
-
-    /* HERO */
-    .hero {
-      background: linear-gradient(135deg, #dbeafe, #f0f9ff);
-      border-radius: 24px;
-      padding: 40px;
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 30px;
-      align-items: center;
-      margin-top: 40px;
-    }
-
-    .hero h1 {
-      font-size: 54px;
-      line-height: 1;
-      margin-bottom: 12px;
-    }
-
-    .hero h1 span {
-      color: #3b82f6;
-    }
-
-    .hero p {
-      color: #4b5563;
-      max-width: 420px;
-    }
-
-    .hero-illustration {
-      background: #ffffff;
-      border-radius: 20px;
-      height: 260px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px dashed #c7d2fe;
-      cursor: pointer;
-      overflow: hidden;
-    }
-
-    .hero-illustration img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    input[type=file] {
-      display: none;
-    }
-
-    /* ABOUT */
-    .card {
-      background: #ffffff;
-      border-radius: 24px;
-      padding: 40px;
-      margin-top: 60px;
-      display: grid;
-      grid-template-columns: 1fr 320px;
-      gap: 40px;
-    }
-
-    .about h2 {
-      font-size: 28px;
-      margin-bottom: 12px;
-    }
-
-    .about h3 {
-      font-size: 36px;
-      margin-bottom: 8px;
-    }
-
-    .about p {
-      color: #4b5563;
-      line-height: 1.7;
-    }
-
-    .profile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .profile-photo {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 3px solid #dbeafe;
-      margin-bottom: 16px;
-      cursor: pointer;
-    }
-
-    .profile-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* GRID */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .box h4 {
-      margin-bottom: 12px;
-      font-size: 20px;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    ul li {
-      margin-bottom: 6px;
-      color: #374151;
-    }
-
-    .software span {
-      display: block;
-      height: 6px;
-      background: #e5e7eb;
-      border-radius: 10px;
-      overflow: hidden;
-      margin-bottom: 12px;
-    }
-
-    .software span::after {
-      content: '';
-      display: block;
-      height: 100%;
-      width: var(--level);
-      background: #3b82f6;
-      border-radius: 10px;
-    }
-
-    footer {
-      text-align: center;
-      color: #6b7280;
-      margin-top: 60px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Dafin - Bikini & Swimwear Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="wrapper">
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Dafin</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-      <div>
-        <h1>PORT<span>FOLIO</span></h1>
-        <p>Portfolio pribadi dengan gaya ilustratif, cerah, dan modern. Cocok untuk kreator visual dan pelajar.</p>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Muhammad Dafin</h1>
+      <p>Bikini • Swimwear • Beachwear Model</p>
+      <a href="#gallery" class="btn">Lihat Koleksi Foto</a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Portfolio Gallery</h2>
+    <div class="gallery-grid">
+
+      <!-- Ganti src sesuai nama file foto kamu di folder images/ -->
+      <div class="gallery-item">
+        <!-- ★ MASUKIN FOTO KAMU DI SINI ★ -->
+        <img src="images/foto1.jpg" alt="Bikini photoshoot 1">
       </div>
 
-      <label class="hero-illustration">
-        <span>Upload ilustrasi utama</span>
-        <input type="file" accept="image/*" onchange="loadHero(event)">
-      </label>
-    </section>
+      <div class="gallery-item">
+        <!-- ★ MASUKIN FOTO KAMU DI SINI ★ -->
+        <img src="images/foto2.jpg" alt="Beach bikini pose">
+      </div>
 
-    <section class="card">
-      <div class="about">
-        <h2>About Me</h2>
-        <h3>Dapinn</h3>
+      <div class="gallery-item">
+        <!-- ★ MASUKIN FOTO KAMU DI SINI ★ -->
+        <img src="images/foto3.jpg" alt="Swimwear editorial">
+      </div>
+
+      <div class="gallery-item">
+        <!-- ★ MASUKIN FOTO KAMU DI SINI ★ -->
+        <img src="images/foto4.jpg" alt="Sunset bikini shot">
+      </div>
+
+      <div class="gallery-item">
+        <!-- ★ MASUKIN FOTO KAMU DI SINI ★ -->
+        <img src="images/foto5.jpg" alt="Poolside look">
+      </div>
+
+      <div class="gallery-item">
+        <!-- ★ MASUKIN FOTO KAMU DI SINI ★ -->
+        <img src="images/foto6.jpg" alt="Tropical vibe">
+      </div>
+
+      <!-- Tambah div.gallery-item sebanyak yang kamu mau -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="about-left">
+        <!-- ★ MASUKIN FOTO PROFIL KAMU DI SINI ★ -->
+        <img src="images/profile.jpg" alt="Foto profil Dafin">
+      </div>
+      <div class="about-right">
+        <h2>Tentang Saya</h2>
         <p>
-              Hai, aku pelajar SMK yang tertarik dengan teknologi, pengembangan web dan Sistem tedesentralisasi.
-    Aku suka bikin tampilan yang sederhana, rapi, dan mudah dipahami.
-    Saat ini fokus belajar HTML, CSS, JavaScript, dan Linux sambil
-    Belajar di Course Cyfrin Updraft : Blockchain basic
+          Model profesional dengan spesialisasi bikini, swimwear, dan beach fashion. 
+          Berpengalaman di berbagai photoshoot untuk brand lokal dan editorial majalah.
+          Tinggi 175 cm, ukuran S/M, siap kerja indoor & outdoor.
         </p>
-
-        <div class="grid">
-          <div class="box">
-            <h4>Education</h4>
-            <p>SMK – Teknik Jaringan & Komputer</p>
-          </div>
-
-          <div class="box">
-            <h4>Skills</h4>
-            <ul>
-              <li>Web Design</li>
-              <li>HTML & CSS</li>
-              <li>Grapic Design</li>
-              <li>UI Layout</li>
-              <li>Python-lang</li>
-            </ul>
-          </div>
-
-          <div class="box software">
-            <h4>Softwares</h4>
-            <small>VS Code</small>
-            <span style="--level:80%"></span>
-            <small>Figma</small>
-            <span style="--level:65%"></span>
-            <small>Coreldraw</small>
-            <span style="--level:90%"></span>
-          </div>
-        </div>
+        <p>
+          Lokasi base: Yogyakarta & sekitarnya<br>
+          Bisa travel ke Bali, Jakarta, Bandung (tergantung project).
+        </p>
+        <h3>Stats</h3>
+        <ul>
+          <li>Tinggi: 175 cm</li>
+          <li>Bust: 85 cm</li>
+          <li>Waist: 65 cm</li>
+          <li>Hips: 92 cm</li>
+        </ul>
       </div>
+    </div>
+  </section>
 
-      <div class="profile">
-        <label class="profile-photo">
-          <input type="file" accept="image/*" onchange="loadProfile(event)">
-          <img src="" alt="" />
-        </label>
-        <p>@dapinn</p>
-      </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Hubungi Saya</h2>
+    <p>Untuk booking photoshoot atau kolaborasi</p>
+    
+    <div class="contact-info">
+      <p>📱 WhatsApp / Telegram: 0812-xxxx-xxxx</p>
+      <p>📧 Email: dafin.model@gmail.com</p>
+      <p>📸 Instagram: @dafin_bikini (ganti dengan akun asli kamu)</p>
+    </div>
+  </section>
 
-    <footer>
-      © 2026 Dapinn Portfolio
-    </footer>
-
-  </div>
-
-  <script>
-    function loadHero(e) {
-      const box = e.target.parentElement;
-      const img = document.createElement('img');
-      img.src = URL.createObjectURL(e.target.files[0]);
-      box.innerHTML = '';
-      box.appendChild(img);
-    }
-
-    function loadProfile(e) {
-      const img = e.target.nextElementSibling;
-      img.src = URL.createObjectURL(e.target.files[0]);
-    }
-  </script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Muhammad Dafin. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
